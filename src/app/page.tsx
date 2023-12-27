@@ -1,9 +1,17 @@
 import Image from 'next/image'
 
+import Hero from './components/Sections/Hero';
+import About from './components/Sections/About';
+import Projects from './components/Sections/Projects';
+import Contact from './components/Sections/Contact';
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      portfolio updated
+    <main className="">
+      <Hero/>
+      <About/>
+      <Projects/>
+      <Contact/>
     </main>
   )
 }

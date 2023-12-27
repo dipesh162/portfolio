@@ -1,27 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  @font-face {
+    font-family: 'Asap';
+    src: url('/fonts/cretype  Caros Bold.otf');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Medium.ttf');
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+html {
+  scroll-behavior: smooth;
+}
+
+.animate-morph{
+  animation: morph 8s ease-in-out infinite;
+}
+
+@keyframes morph {
+  /* Define your keyframes here */
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }
