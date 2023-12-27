@@ -10,7 +10,7 @@ export default function Header(){
 
     return (
         <nav className="bg-white fixed w-full pt-[25px] pr-[40px] pb-[25px] pl-[50px] border-b-[1px] border-[#e8e8e8] z-[1] flex justify-center" style={{boxShadow: '0 0 10px rgba(0,0,0,.09)'}}>
-            <div className="max-w-[1280px] flex justify-between w-full">
+            <div className="max-w-[1280px] pr-[10px] flex justify-between w-full">
                 <Link href="#hero"><h2 className="text-[18px] font-extrabold font-poppins text-[#2D2E32]">Dipesh.dev</h2></Link>
 
                 <ul className="hidden md:flex gap-5 font-[600] text-[17px] text-[#2d2e32] tracking-[0.5px]">
