@@ -18,13 +18,14 @@ function Hero() {
 
               <h4 className='text-[18px] text-center md:text-left text-[#555] font-mulish font-medium leading-[1.6]'>Hi, I'm Dipesh. A passionate full-stack MERN developer with expertise primarily in front-end development based in New Delhi, India.</h4>
 
-              <div className="flex gap-4 my-7 md:my-10 justify-center md:justify-normal">
+              <div className="flex gap-4 my-7 md:my-10 justify-center items-center md:justify-normal">
                 <Link href='https://www.linkedin.com/in/dipesh162/'>
                     <FaLinkedin size={32}/>
                 </Link>
                 <Link href='https://github.com/dipesh162'>
                     <FaGithub size={32}/>
                 </Link>
+                <a className='bg-[#767676] ml-0 md:ml-3 text-white rounded-[10px] py-[8px] px-[16px]' href="./Dipesh_Singh_Resume.pdf" download>Download Resume</a>
               </div>
             </div>
             {/* animate-morph */}
