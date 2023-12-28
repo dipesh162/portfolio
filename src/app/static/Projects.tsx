@@ -10,7 +10,7 @@ const ProjectsData = [
     {
         title: 'Music Store (E commerce)',
         description: 'A MERN stack ecommerce music store for all music enthusiasts, showcasing variety of string, keyboards, wind and percussive instruments.',
-        skills: ['NodeJS', 'ExpressJS', 'EJS', 'Tailwind CSS'],
+        skills: ['NextJS', 'NodeJS', 'ExpressJS', 'MongoDB', 'Tailwind CSS'],
         images: ['1.jpg','2.jpg','3.jpg'],
         githubLink:'https://github.com/dipesh162/Music-Store',
         hostedUrl: 'https://music-store-dipesh162.vercel.app/',
