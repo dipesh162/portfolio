@@ -5,41 +5,60 @@ import { FaLinkedin } from "react-icons/fa";
 
 function Hero() {
   return (
-    <section id="hero" className='bg-[#f9f9f9] max-w-[107rem] py-0 px-[64px]'> 
-        <div className='flex'>
-    <div className=''>
-      <div className=''>
-        <h1 className='font-caros text-[55px] leading-[1.2] font-bold relative'>Front-End React Developer 
-          <img src='/images/wave.png' width={60} className='absolute right-[235px] top-[65px]'/>
-        </h1>
-      </div>
+    <section id="hero" className='bg-[#f9f9f9] py-10 md:py-20 px-5 md:px-[50px]'> 
+        <div className="max-w-[1028px] mx-auto">
+          <div className='flex-col-reverse md:flex-row flex md:justify-center gap-12'>
+            <div className='md:max-w-[50%]'>
+              <div className=''>
+                <h1 className='font-caros text-center md:text-left text-[36px] md:text-[55px] leading-[1.2] font-bold relative mb-3'>Front-End React <span className='flex text-center justify-center md:justify-start md:text-left'>Developer 
+                <img src='/images/wave.png' className='w-[40px] md:w-[60px] ml-2.5 md:ml-5 static right-[235px] top-[65px]'/>
+                </span>
+                </h1>
+              </div>
 
-      <h4 className='text-[18px] text-[#555] font-mulish font-medium leading-[1.6]'>Hi, I'm Dipesh, a passionate full-stack MERN developer based in New Delhi, India, with expertise primarily in front-end development.</h4>
+              <h4 className='text-[18px] text-center md:text-left text-[#555] font-mulish font-medium leading-[1.6]'>Hi, I'm Dipesh. A passionate full-stack MERN developer with expertise primarily in front-end development based in New Delhi, India.</h4>
 
-      <div className="flex gap-4">
-        <Link href='https://www.linkedin.com/in/dipesh162/'>
-            <FaLinkedin size={32}/>
-        </Link>
-        <Link href='https://github.com/dipesh162'>
-            <FaGithub size={32}/>
-        </Link>
-      </div>
-    </div>
+              <div className="flex gap-4 my-7 md:my-10 justify-center md:justify-normal">
+                <Link href='https://www.linkedin.com/in/dipesh162/'>
+                    <FaLinkedin size={32}/>
+                </Link>
+                <Link href='https://github.com/dipesh162'>
+                    <FaGithub size={32}/>
+                </Link>
+              </div>
+            </div>
+            {/* animate-morph */}
 
-    <div className={`animate-morph transition-all duration-1000 ease-in-out animate-morph w-[35rem] h-[35rem] animate-[morph] relative bg-[50%] bg-cover bg-no-repeat bg-[url('/images/random.jpg')] border-[3px] border-[#2d2e32] rounded-[60% 40% 30% 70%/60% 30% 70% 40%]`}>
-      
-{/* // animation: morph 8s ease-in-out infinite;
-// transition: all 1s ease-in-out; */}
+            <div style={{borderRadius: '37% 63% 56% 44% / 24% 31% 69% 76%'}} 
+            className={`
+              rounded-['37% 63% 56% 44% / 24% 31% 69% 76%'] transition-all duration-1000 ease-in-out w-[250px] mx-auto md:mx-0 h-[250px] md:w-[300px] md:h-[300px] animate-[morph] relative bg-[50%] bg-cover bg-no-repeat bg-[url('/images/random.jpg')] border-[3px] border-[#2d2e32] rounded-[60% 40% 30% 70%/60% 30% 70% 40%]
+            `}>
+            </div>
+          </div>
 
-
-      {/* <img src="/images/random.jpg" width={100} alt="" /> */}
-    </div>
+          <div className='flex flex-col md:flex-row justify-center gap-5 md:gap-8 my-5 items-center'>
+            <p className='text-[#2d2e32] mx-auto md:mx-0 border-b-[2px] md:border-r-[2px] md:border-b-0 border-[rgba(45,46,50,.5)] h-fit font-semibold pb-3 md:pr-4 md:pb-0 w-fit'>Tech Stack</p>
+            <ul className='flex gap-4 flex-wrap justify-center'>
+              <li className='cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-4'>
+                <img src="https://skillicons.dev/icons?i=html,css"></img>
+              </li>
+              <li className='cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-4'>
+                <img src="https://skillicons.dev/icons?i=tailwind,materialui"></img>
+              </li>
+              <li className='cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-4'>
+                <img src="https://skillicons.dev/icons?i=javascript,typescript"></img>
+              </li>
+              <li className='cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-4'>
+                <img src="https://skillicons.dev/icons?i=react,next"></img>
+              </li>
+              <li className='cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-4'>
+                <img src="https://skillicons.dev/icons?i=mongodb,nodejs"></img>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div>
-            Tech Stack | 
-            <h3>https://skillicons.dev/</h3>
-        </div>
+
     </section>
   )
 }

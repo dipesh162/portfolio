@@ -10,6 +10,10 @@
     font-family: 'Poppins';
     src: url('/fonts/Poppins-Medium.ttf');
   }
+  @font-face {
+    font-family: 'Mulish';
+    src: url('/fonts/Mulish-VariableFont_wght.ttf');
+  }
 }
 
 html {

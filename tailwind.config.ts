@@ -15,7 +15,8 @@ const config: Config = {
       },
       fontFamily: {
         caros: ['Caros', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif']
+        poppins: ['Poppins', 'sans-serif'],
+        mulish: ['Mulish', 'sans-serif'],
       },
     },
   },
