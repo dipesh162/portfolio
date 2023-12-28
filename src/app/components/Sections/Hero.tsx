@@ -30,7 +30,7 @@ function Hero() {
             </div>
             {/* animate-morph */}
 
-            <div style={{borderRadius: '37% 63% 56% 44% / 24% 31% 69% 76%'}} 
+            <div style={{borderRadius: '37% 63% 56% 44% / 24% 31% 69% 76%', backgroundPosition:'-2px -17px'}} 
             className={`
               rounded-['37% 63% 56% 44% / 24% 31% 69% 76%'] transition-all duration-1000 ease-in-out w-[250px] mx-auto md:mx-0 h-[250px] md:w-[300px] md:h-[300px] animate-[morph] relative bg-[50%] bg-cover bg-no-repeat bg-[url('/images/random.jpg')] border-[3px] border-[#2d2e32] rounded-[60% 40% 30% 70%/60% 30% 70% 40%]
             `}>
