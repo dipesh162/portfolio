@@ -20,6 +20,11 @@ const config: Config = {
       },
     },
   },
+  variants: {
+    extend: {
+      order: ['responsive'],
+    },
+  },
   plugins: [],
 }
 export default config

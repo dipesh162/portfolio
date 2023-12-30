@@ -6,9 +6,8 @@ import { useEffect, useState } from "react"
 
 export default function ProjectCard({project,index}:{project:any,index:number}){
 
-
     const cardsAlignment = (index+1)%2 ==0 ? 'left' : 'right'
-    console.log(index)
+
     const [activeImageIndex, setActiveImageIndex] = useState(0)
     const imagesLength = project.images.length
 
@@ -25,7 +24,7 @@ export default function ProjectCard({project,index}:{project:any,index:number}){
 
     return(
         <div className="mt-12 p-[20px] text-[16px] rounded-[16px] flex flex-col md:flex-row gap-5" style={{boxShadow:'0 0 10px rgba(0,0,0,.1)'}}>
-            <div className={`w-full order-${cardsAlignment == 'right'? 1 : 2} md:w-[60%] flex justify-center`}>
+            <div className={`w-full ${cardsAlignment === 'right' ? 'md:order-2' : 'md:order-1'} md:w-[60%] flex justify-center`}>
                 <div className=" h-[400px] w-full relative">
                     {project.images.map((proj:any,i:number)=>(
                         <Image
@@ -33,12 +32,13 @@ export default function ProjectCard({project,index}:{project:any,index:number}){
                             fill={true}
                             className={`${activeImageIndex == i ? 'block': 'hidden'} rounded-[16px] `}
                             src={`/images/Projects/${project.title}/${i+1}.jpg`}
+                            style={{boxShadow:'0 0 10px rgba(0,0,0,.1)'}}
                         />  
                     ))
                     }
                 </div>
             </div>
-            <div className={`w-full order-${cardsAlignment == 'left'? 1 : 2} md:w-[40%] text-center flex flex-col justify-center gap-6`}>
+            <div className={`w-full ${cardsAlignment === 'left' ? 'md:order-2' : 'md:order-1'} md:w-[40%] text-center flex flex-col justify-center gap-6`}>
                 <h2 className="uppercase text-[16px] text-[#2d2e32] font-bold font-poppins">{project.title}</h2>
                 <p className="text-[#767676] font-[400] font-poppins">{project.description}</p>
 
