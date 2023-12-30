@@ -3,6 +3,8 @@
 import { FiGithub } from "react-icons/fi";
 import Image from "next/image"
 import { useEffect, useState } from "react"
+import { IoChevronBack } from "react-icons/io5";
+import { IoChevronForward } from "react-icons/io5";
 
 export default function ProjectCard({project,index}:{project:any,index:number}){
 
@@ -22,20 +24,34 @@ export default function ProjectCard({project,index}:{project:any,index:number}){
         }
     },[activeImageIndex])
 
+    const handleForward = () =>{
+        setActiveImageIndex(activeImageIndex+1 == imagesLength ? 0 : activeImageIndex+1)
+    }
+
+    const handlePrev = () =>{
+        setActiveImageIndex(activeImageIndex == 0 ? imagesLength-1 : activeImageIndex-1)
+    }
+
     return(
         <div className="mt-12 p-[20px] text-[16px] rounded-[16px] flex flex-col md:flex-row gap-5" style={{boxShadow:'0 0 10px rgba(0,0,0,.1)'}}>
             <div className={`w-full ${cardsAlignment === 'left' ? 'md:order-2' : 'md:order-1'} md:w-[60%] flex justify-center`}>
                 <div className=" h-[400px] w-full relative">
-                    {project.images.map((proj:any,i:number)=>(
-                        <Image
-                            alt="Project Image"
-                            fill={true}
-                            className={`${activeImageIndex == i ? 'block': 'hidden'} rounded-[16px] `}
-                            src={`/images/Projects/${project.title}/${i+1}.jpg`}
-                            style={{boxShadow:'0 0 10px rgba(0,0,0,.1)'}}
-                        />  
-                    ))
-                    }
+                    <div onClick={handlePrev} className="flex justify-center z-10 items-center absolute p-1 top-[50%] bg-white left-[10px] bottom-[50%] border-[1px] border-[#2D2E32] h-[30px] rounded-[50%] cursor-pointer w-[30px]" style={{boxShadow:'0 0 10px rgba(0,0,0,.1)'}}>
+                        <IoChevronBack size={40} />
+                    </div>
+                        {project.images.map((proj:any,i:number)=>(
+                            <Image
+                                alt="Project Image"
+                                fill={true}
+                                className={`${activeImageIndex == i ? 'block': 'hidden'} rounded-[16px] `}
+                                src={`/images/Projects/${project.title}/${i+1}.jpg`}
+                                style={{boxShadow:'0 0 10px rgba(0,0,0,.1)'}}
+                            />  
+                        ))
+                        }
+                    <div onClick={handleForward} className="flex justify-center items-center absolute p-1 top-[50%] bg-white right-[10px] bottom-[50%] border-[1px] border-[#2D2E32] h-[30px] rounded-[50%] cursor-pointer  w-[30px]" style={{boxShadow:'0 0 10px rgba(0,0,0,.1)'}}>
+                        <IoChevronForward size={60} />
+                    </div>
                 </div>
             </div>
             <div className={`w-full ${cardsAlignment === 'right' ? 'md:order-2' : 'md:order-1'} md:w-[40%] text-center flex flex-col justify-center gap-6`}>
