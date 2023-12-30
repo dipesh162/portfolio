@@ -13,7 +13,7 @@ function About() {
     <section id='about' className='max-w-[107rem] py-14 md:py-20 px-5 md:px-[64px]'>
         <div className="max-w-[1028px] mx-auto px-0 md:px-[62px]">
           <div className='flex flex-col md:grid md:grid-cols-2'>
-            <div className='flex'>
+            <div className='flex justify-center md:justify-normal'>
               <img src={'/images/intro.jpg'} className='h-[300px] w-[90%] md:w-[90%] rounded-[20px]' alt="" />
             </div>
             <div>
