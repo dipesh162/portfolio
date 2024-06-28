@@ -43,7 +43,7 @@ const ProjectsData = [
         title: 'Restaurant Menu',
         description: ' created a dynamic menu for a London-based restaurant using Tailwind CSS for styling and React Intersection Observer for adding animations and effects. This project showcases my ability to combine modern CSS frameworks and JavaScript libraries to enhance user experience through interactive and visually appealing designs.',
         skills: ['ReactJS', 'Intersection Observer', 'Tailwind CSS'],
-        images: ['1.png','2.png','3.png'],
+        images: ['1.png','2.png','3.png','4.png'],
         githubLink:'https://github.com/dipesh162/restaurant',
         hostedUrl: 'https://friendly-otter-198bf6.netlify.app/',
     },
