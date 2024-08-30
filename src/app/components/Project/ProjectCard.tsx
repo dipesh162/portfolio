@@ -68,7 +68,7 @@ export default function ProjectCard({project,index}:{project:any,index:number}){
                 </div>
             </div>
             <div className={`w-full ${cardsAlignment === 'right' ? 'md:order-2' : 'md:order-1'} md:w-[40%] text-center flex flex-col justify-center gap-6`}>
-                <h2 className="uppercase text-[16px] text-[#2d2e32] font-bold font-poppins">{project.title}</h2>
+                <h2 className="uppercase text-[20px] text-[#2d2e32] font-bold font-poppins">{project.title}</h2>
                 <h3 className="text-[#767676] font-[400] font-poppins">{parse(project.description)}</h3>
 
                 <div className="flex flex-wrap justify-center gap-3">
