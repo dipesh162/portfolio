@@ -32,6 +32,14 @@ const ProjectsData = [
         hostedUrl: 'https://freetourtickets.onrender.com/',
     },
     {
+        title: 'Chain Calculator',
+        description: 'The Function Chain Calculator is a web app built with React and Next.js that lets users chain mathematical functions and calculate results in real-time. It allows adding, removing, and reordering functions dynamically while offering instant feedback and error handling. The app is fully responsive, providing a smooth user experience across devices, and showcases my expertise in building interactive, user-friendly applications with modern web technologies.',
+        skills: ['ReactJS', 'NextJS', 'NodeJS', 'Tailwind CSS'],
+        images: ['1.png','2.png','3.png'],
+        githubLink:'https://github.com/dipesh162/Function-Chain-Calculator',
+        hostedUrl: 'https://function-chain-calculator.netlify.app/',      
+    },
+    {
         title: 'Fifteen Puzzle Game',
         description: 'I developed a 15 Puzzle Game using React, designed to challenge players to arrange tiles in numerical order by moving them within a 4x4 grid. The game features:<ul><li>Timer: Tracks the duration of the game.</li><li>Move Counter: Keeps count of the number of moves made.</li><li>Reset Button: Allows players to restart the game at any time.</li><li>Shuffle Functionality: Randomly shuffles the tiles for a new challenge.</li><li>Next Step Button: Enables progression to subsequent stages or levels.</li><li>This project showcases my skills in React, state management, and interactive UI design.</li></ul>',
         skills: ['ReactJS', 'NextJS', 'NodeJS', 'ExpressJS', 'MongoDB', 'Tailwind CSS'],

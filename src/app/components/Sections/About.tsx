@@ -20,12 +20,10 @@ function About() {
               <p className='text-[#147efb] text-[17px] font-poppins font-bold mb-[10px] text-center mt-5 md:mt-0 md:text-left'>ABOUT ME</p>
               <h3 className='text-[#2d2e32] text-[25px] font-poppins font-bold mb-[20px] text-center md:text-left'>A dedicated Front-end Developer based in Delhi, India 📍</h3>
               <p className='text-[#767676] font-mulish text-[17px] font-[500]'>
-                I am a seasoned React/Next.js developer with over <b>3.3 years</b> of dedicated experience in crafting an ed-tech platform from scratch. My expertise lies in front-end development within the <b>MERN stack</b>, where I have consistently demonstrated a passion for creating seamless <b>UI/UX</b>.
-                Throughout my career,I have a proven track record of translating complex design requirements into elegant and functional <b>UI/UX's</b>. My commitment to staying abreast of the latest technologies and trends in web development ensures that I bring cutting-edge solutions to the table.
-                My proficiency in React and Next.js is complemented by a solid understanding of back-end technologies, enabling me to collaborate effectively within cross-functional teams.
-                As a front-end specialist, I am poised to bring my technical skills and creative problem-solving abilities to future projects, contributing to the continued success of innovative and impactful educational technology initiatives.
-              </p>
-
+              <b>Experienced Frontend Developer | React & Next.js Specialist</b>
+              <p>
+                With over 5 years of experience, I specialize in building dynamic, user-friendly web applications using React and Next.js. I played a key role in developing a full-scale ed-tech platform from scratch, transforming complex requirements into intuitive, high-performance solutions. My expertise in front-end development, coupled with a solid understanding of the MERN stack, allows me to deliver cutting-edge features that elevate user experiences. I thrive in fast-paced environments, collaborating effectively with cross-functional teams to ensure smooth, scalable product development. Passionate about innovation, I stay up-to-date with the latest technologies to drive impactful projects forward.
+              </p>               
               {/* <div className='mt-8'>
                 <div className="tab-buttons flex gap-4">
                   <button onClick={() => handleTabClick(2)} className={activeTab === 2 ? 'text-[#2D2E32] font-bold' : 'text-[#2D2E32] font-semibold'}>
