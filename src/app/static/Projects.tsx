@@ -1,5 +1,13 @@
 const ProjectsData = [
     {
+        title: 'Heart Care',
+        description: "Developed a fully responsive website for a cardiologist using Next.js and Tailwind CSS.Replicated the design from an archived version of the client’s old site and added updated service information.",
+        skills: ['ReactJS', 'NextJS', 'Tailwind CSS'],
+        images: ['1.png','2.png','3.png','4.png','5.png'],
+        githubLink:'https://github.com/dipesh162/Heart-Care-Noida',
+        hostedUrl: 'https://heart-care-noida-qgl8tgfms-dipesh162.vercel.app/',        
+    },
+    {
         title: 'Movie Browser',
         description: 'Developed a movie browser application using the TMDB API, featuring custom filters for type, popularity, release year, genre, and rating range. The app includes a personalized infinite scrolling implementation, allowing users to explore a wide range of movies effortlessly. Additionally, users can bookmark their favorite movies and TV shows for easy access, enhancing the overall viewing experience.',
         skills: ['ReactJS', 'NextJS', 'NodeJS', 'Tailwind CSS'],
