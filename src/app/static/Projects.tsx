@@ -3,9 +3,17 @@ const ProjectsData = [
         title: 'Heart Care',
         description: "Developed a fully responsive website for a cardiologist using Next.js and Tailwind CSS.Replicated the design from an archived version of the client’s old site and added updated service information.",
         skills: ['ReactJS', 'NextJS', 'Tailwind CSS'],
-        images: ['1.png','2.png','3.png','4.png','5.png'],
+        images: ['1.png','2.png','3.png'],
         githubLink:'https://github.com/dipesh162/Heart-Care-Noida',
         hostedUrl: 'https://heart-care-noida-qgl8tgfms-dipesh162.vercel.app/',        
+    },
+    {
+        title: 'Versioned Rich Text Editor',
+        description: "A full-featured, collaborative document editor built using TipTap (ProseMirror), designed to support version control and branching timelines. This project demonstrates advanced state management, real-time UI updates, and a creative approach to document versioning and branching workflows in the browser.",
+        skills: ['ReactJS', 'TypeScript', 'Vite', 'Tailwind CSS'],
+        images: ['1.png','2.png','3.png','4.png'],
+        githubLink:'https://github.com/dipesh162/Versioned-Rich-Text-Editor',
+        hostedUrl: 'https://versioned-rich-text-editor-3sd76rfeh-dipesh162s-projects.vercel.app/',        
     },
     {
         title: 'Movie Browser',
