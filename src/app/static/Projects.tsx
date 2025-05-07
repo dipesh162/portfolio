@@ -13,7 +13,7 @@ const ProjectsData = [
         skills: ['ReactJS', 'TypeScript', 'Vite', 'Tailwind CSS'],
         images: ['1.png','2.png','3.png','4.png'],
         githubLink:'https://github.com/dipesh162/Versioned-Rich-Text-Editor',
-        hostedUrl: 'https://versioned-rich-text-editor-3sd76rfeh-dipesh162s-projects.vercel.app/',        
+        hostedUrl: 'https://versioned-rich-text-editor.vercel.app/'     
     },
     {
         title: 'Movie Browser',
