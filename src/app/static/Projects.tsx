@@ -1,5 +1,13 @@
 const ProjectsData = [
     {
+        title: 'Market Seasonality Explore',
+        description: "Application that visualizes market seasonality through a dynamic calendar UI with daily, weekly, and monthly views. It includes interactive heatmaps for volatility, liquidity indicators, and performance metrics, designed to help traders and analysts explore historical pattern.",
+        skills: ['ReactJS', 'NextJS', 'Material UI', 'Recharts'],
+        images: ['1.jpeg','2.jpeg','3.jpeg', '4.jpeg','5.jpeg','6.jpeg'],
+        githubLink:'https://github.com/dipesh162/Marketing-seasonality-explorer',
+        hostedUrl: 'https://marketing-seasonality-explorer.vercel.app/',        
+    },
+    {
         title: 'Heart Care',
         description: "Developed a fully responsive website for a cardiologist using Next.js and Tailwind CSS.Replicated the design from an archived version of the client’s old site and added updated service information.",
         skills: ['ReactJS', 'NextJS', 'Tailwind CSS'],
