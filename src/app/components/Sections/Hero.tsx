@@ -25,7 +25,7 @@ function Hero() {
                 <Link href='https://github.com/dipesh162'>
                     <FaGithub size={32}/>
                 </Link>
-                <a className='bg-[#767676] ml-0 md:ml-3 text-white rounded-[10px] py-[8px] px-[16px]' href="./Dipesh_Singh_Resume.pdf" download>Download Resume</a>
+                <a className='bg-[#767676] ml-0 md:ml-3 text-white rounded-[10px] py-[8px] px-[16px]' href="./Dipesh_Singh_Resume1.pdf" download>Download Resume</a>
               </div>
             </div>
             {/* animate-morph */}
